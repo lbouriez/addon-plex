@@ -105,7 +105,7 @@ jobs:
         with:
           token: ${{ secrets.GIT_TOKEN }}
       - name: 🚀 Run Prettier
-        uses: creyD/prettier_action@v3.3
+        uses: creyD/prettier_action@v4.1
         with:
           prettier_options: --write **/*.{json,js,md,yaml}
         env:
