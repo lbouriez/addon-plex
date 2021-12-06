@@ -17,4 +17,4 @@ jobs:
     uses: lbouriez/workflows/.github/workflows/addon-deploy.yaml@main
     secrets:
       DISPATCH_TOKEN: ${{ secrets.DISPATCH_TOKEN }}
-      GITHUB_TOKEN: ${{ secrets.GIT_TOKEN }}
+      GIT_TOKEN: ${{ secrets.GIT_TOKEN }}
