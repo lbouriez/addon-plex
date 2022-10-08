@@ -7,7 +7,7 @@ SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
 # Setup base system
 ARG BUILD_ARCH=amd64
-ARG RELEASE=1.28.2.6151-914ddd2b3
+ARG RELEASE=1.29.1.6260-420892357
 RUN \
     apt-get update \
     \
@@ -15,7 +15,7 @@ RUN \
         xmlstarlet=1.6.1-2build1 \
         uuid-runtime=2.34-0.1ubuntu9.3 \
         unrar=1:5.6.6-2build1 \
-        cifs-utils=2:6.8-1 \
+        cifs-utils=2:6.9-1 \
     \
     && if [ "${BUILD_ARCH}" = "aarch64" ]; then ARCH="aarch64"; fi \
     && if [ "${BUILD_ARCH}" = "amd64" ]; then ARCH="x86_64"; fi \
